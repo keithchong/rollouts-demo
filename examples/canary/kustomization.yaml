@@ -9,3 +9,5 @@ resources:
 - canary-preview-ingress.yaml
 - canary-test-service.yaml
 - canary-test-ingress.yaml
+- canary-beta-service.yaml
+- canary-beta-ingress.yaml
