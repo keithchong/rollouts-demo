@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: canary-demo-alpha
+  annotations:
+    ingress.kubernetes.io/proxy-body-size: 100M
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    kubernetes.io/ingress.class: nginx
+    ingress.kubernetes.io/app-root: /
+spec:
+  rules:
+  - host: canary-alpha.dev.argoproj.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: canary-demo-alpha
+            port:
+              number: 80
