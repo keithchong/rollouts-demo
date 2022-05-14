@@ -20,3 +20,10 @@ spec:
             name: canary-demo-beta
             port:
               number: 80
+      - path: /beta
+        pathType: Prefix
+        backend:
+          service:
+            name: canary-demo-beta
+            port:
+              number: 81
