@@ -24,6 +24,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: canary-demo-beta
+            name: canary-demo-beta2
             port:
               number: 81
