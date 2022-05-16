@@ -16,3 +16,5 @@ resources:
 - canary-alpha-ingress.yaml
 - canary-sandbox-service.yaml
 - canary-sandbox-ingress.yaml
+- canary-production-service.yaml
+- canary-production-ingress.yaml
