@@ -11,6 +11,7 @@ resources:
 - canary-test-ingress.yaml
 - canary-beta-service.yaml
 - canary-beta-service2.yaml
+- canary-beta-service3.yaml
 - canary-beta-ingress.yaml
 - canary-alpha-service.yaml
 - canary-alpha-ingress.yaml
